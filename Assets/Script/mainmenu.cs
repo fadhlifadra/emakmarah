@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 public class mainmenu : MonoBehaviour
 {
-    public string arah;
-
-    public void GantiTujuan()
+    public GameObject keluar;
+    public void GantiTujuan(string scene)
     {
-    Application.LoadLevel(arah);
+        Application.LoadLevel(scene);
     }
-    // Start is called before the first frame update
+
+    public void Keluar()
+    {
+        Application.Quit();
+    }
+
     void Start()
     {
-
+        keluar.SetActive(false);
     }
 
     // Update is called once per frame
