@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\mainmenu.cs" />
      <Compile Include="Assets\Script\anak.cs" />
+     <Compile Include="Assets\Script\mainmenu.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/2020.1.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -14,6 +14,11 @@ public class mainmenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void Kembali(bool kembali)
+    {
+        keluar.SetActive(kembali);
+    }
+
     void Start()
     {
         keluar.SetActive(false);
