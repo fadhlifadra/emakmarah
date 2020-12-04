@@ -2,19 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
     private Vector2 targetPos;
     public float Yincrement, speed, maxheight, minHeight;
     public int health = 3;
+    public GameObject gameover;
+    public Text healthdisplay;
 
     // Update is called once per frame
     private void Update()
     {
+        healthdisplay.text = health.ToString();
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameover.SetActive(true);
+            Destroy(gameObject);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);

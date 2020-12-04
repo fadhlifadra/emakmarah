@@ -36,10 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\obstacle.cs" />
      <Compile Include="Assets\Script\player.cs" />
      <Compile Include="Assets\Script\mainmenu.cs" />
-     <Compile Include="Assets\Script\obstacle.cs" />
      <Compile Include="Assets\Script\spawner.cs" />
+     <Compile Include="Assets\Script\spawnpoint.cs" />
+     <Compile Include="Assets\Script\destroyer.cs" />
+     <Compile Include="Assets\Script\scoremenager.cs" />
+     <Compile Include="Assets\Script\restart.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
